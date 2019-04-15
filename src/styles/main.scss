@@ -1,0 +1,22 @@
+@import "./settings/variables.scss";
+@import "./settings/base.scss";
+@import "./components/_gridContainer.scss";
+@import "./components/_header.scss";
+@import "./components/_logo.scss";
+@import "./components/_menu.scss";
+@import "./components/_footer.scss";
+@import "./components/_infoItem.scss";
+@import "./components/_dayItem.scss";
+@import "./components/_modal.scss";
+@import "./components/_backdrop.scss";
+@import "./components/_location.scss";
+@import "./components/_currentConditions.scss";
+
+//Main sections styles
+
+.Header{
+	background-color: $dark-blue
+}
+.Footer{
+	background-color: $dark-blue
+}

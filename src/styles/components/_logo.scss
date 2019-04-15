@@ -1,0 +1,12 @@
+.logo{
+	max-width: $xl-size;
+	display: flex;
+	align-items: center;
+}
+.logo__img{
+	width: 100%;
+}
+.logo__location{
+	color: $off-white;
+	margin-left: $m-size;
+}

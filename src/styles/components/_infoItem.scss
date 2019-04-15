@@ -1,0 +1,9 @@
+.infoItem{
+	display: flex;
+	align-items: center;
+	background-color: $grey;
+	flex-basis: 100px;
+	.infoItem__info{
+		font-size: $font-size-small;
+	}
+}

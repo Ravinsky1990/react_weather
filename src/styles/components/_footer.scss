@@ -1,0 +1,20 @@
+.footer{
+	display: flex;
+	align-items: center;
+	padding: 6px 0;
+	margin-top: $m-size;
+}
+.footer__img{
+	flex-basis: $l-size;
+	display: flex;
+	align-items: center;
+	margin-right: $m-size;
+}
+.footer__img img{
+	width: 100%;
+}
+.footer__link a{
+	text-decoration: none;
+	color: $off-white;
+	font-size: $font-size-small;
+}

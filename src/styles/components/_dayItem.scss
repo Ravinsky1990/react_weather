@@ -1,0 +1,9 @@
+.dayItem{
+	display: flex;
+	flex-wrap: wrap;
+	.currentCon{
+		width: 100%;
+		margin-bottom: $s-size;
+		text-align: center;
+	}
+}
