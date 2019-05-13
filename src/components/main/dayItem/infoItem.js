@@ -19,7 +19,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">maxtemp.</span>
-				<img src={maxtemp}></img>
+				<img src={maxtemp}alt="maxtemp"></img>
 		 		<span className="infoItem_value">{props.infoData.value}</span>
 		 	</div>
 		);
@@ -28,7 +28,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">mintemp.</span>
-				<img src={mintemp}></img>
+				<img src={mintemp} alt="mintemp"></img>
 		 		<span className="infoItem_value">{props.infoData.value}</span>
 		 	</div>
 		);
@@ -37,7 +37,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">wind speed</span>
-				<img src={windspeed}></img>
+				<img src={windspeed} alt="windspeed"></img>
 		 		<span className="infoItem_value">{props.infoData.value} kph</span>
 		 	</div>
 		);
@@ -46,7 +46,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">precipitation </span>
-				<img src={recip}></img>
+				<img src={recip} alt="recip"></img>
 		 		<span className="infoItem_value">{props.infoData.value} mm</span>
 		 	</div>
 		);
@@ -55,7 +55,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">moonrise</span>
-				<img src={moonrise}></img>
+				<img src={moonrise} alt="moonrise"></img>
 		 		<span className="infoItem_value">{props.infoData.value}</span>
 		 	</div>
 		);
@@ -64,7 +64,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">moonset</span>
-				<img src={moonset}></img>
+				<img src={moonset} alt="moonset"></img>
 		 		<span className="infoItem_value">{props.infoData.value}</span>
 		 	</div>
 		);
@@ -73,7 +73,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">sunrise</span>
-				<img src={sunrise}></img>
+				<img src={sunrise} alt="sunrise"></img>
 		 		<span className="infoItem_value">{props.infoData.value}</span>
 		 	</div>
 		);
@@ -82,7 +82,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">sunset</span>
-				<img src={sunset}></img>
+				<img src={sunset} alt="sunset"></img>
 		 		<span className="infoItem_value">{props.infoData.value}</span>
 		 	</div>
 		);
@@ -90,7 +90,7 @@ const infoItem = (props) => {
 		return(	
 		 	<div className="infoItem">
 		 		<span className="infoItem_name">humidity</span>
-				<img src={humidity}></img>
+				<img src={humidity} alt="humidity"></img>
 		 		<span className="infoItem_value">{props.infoData.value} %</span>
 		 	</div>
 		);

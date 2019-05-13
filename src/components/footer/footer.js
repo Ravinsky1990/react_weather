@@ -8,7 +8,7 @@ const footer = () => {
 			<div className="footer__img">
 				<img alt="footerLogo" src={logo}></img>
 			</div>
-			<div className="footer__link"><a href="#">GitHub</a></div>
+			<div className="footer__link"><a href="https://github.com/Ravinsky1990/react_weather">GitHub</a></div>
 		</footer>
 	)
 }

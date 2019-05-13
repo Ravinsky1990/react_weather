@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import gridContainer from "../gridContainer/gridContainer";
-import axios from "axios";
+//import axios from "axios";
 import {connect} from 'react-redux';
 //actions
 import {startFetchWeatherData} from "../../redux/actions/actions"

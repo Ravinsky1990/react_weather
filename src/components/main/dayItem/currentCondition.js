@@ -12,9 +12,9 @@ class CurrentConditions extends Component{
 		return(	
 		<div className="currentCon">
 			<span className="currentCon_context">Now - {this.props.currentCondition.text}</span>
-			<img src={curPath}></img>
+			<img src={curPath} alt="..."></img>
 			<span className="currentCon_temp">{this.props.currentTemp}</span>
-			<img src={_c}></img> 
+			<img src={_c} alt="..."></img> 
 		</div>
 		)
 	}

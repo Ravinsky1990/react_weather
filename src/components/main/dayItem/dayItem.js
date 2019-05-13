@@ -12,7 +12,7 @@ const dayItem = (props) => {
 		<div className="dayItem">
 			<div className="dayDescr">
 				<span className="dayDescr_cur">{getWd(props.day_data.date_epoch)}</span>
-				<img src={curPath}></img>
+				<img src={curPath} alt="day"></img>
 			</div>
 			<div className="dayItem__infoItemWrap">
 				{props.day_data.date_conditions.map((day_info)=>{

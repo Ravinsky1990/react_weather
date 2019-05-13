@@ -4,10 +4,10 @@ import Main from "./components/main/mainHOC";
 import Footer from "./components/footer/footer";
 import Location from "./components/location/location";
 import SideDrawer from "./components/sideMenu/sideDrawer"
-import { connect } from 'react-redux';
+//import { connect } from 'react-redux';
 //import axios from "axios"
 //Actions
-import {startFetchWeatherData} from "./redux/actions/actions"
+//import {startFetchWeatherData} from "./redux/actions/actions"
 
 
 class App extends Component {
