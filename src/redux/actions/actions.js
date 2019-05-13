@@ -28,3 +28,12 @@ export const setDefaultParams = (params)=>{
 	}
 }
 
+//Set icons data
+
+export const setIconData = (icons)=>{
+	return{
+		type: "SET_ICONS",
+		icons
+	}
+}
+

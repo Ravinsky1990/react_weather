@@ -1,9 +1,18 @@
 .infoItem{
+	font-weight: bold;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
-	background-color: $grey;
-	flex-basis: 100px;
-	.infoItem__info{
-		font-size: $font-size-small;
+	flex-basis: 200px;
+	margin-bottom: $xl-size;
+	.infoItem_name{
+		width: 100%;
+		text-align: center;
+		margin-bottom: $s-size;
 	}
+	.infoItem_value{
+		margin-left: $s-size;
+	}
+	
 }

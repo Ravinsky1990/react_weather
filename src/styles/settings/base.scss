@@ -4,12 +4,14 @@
 
 html {
     font-size: 62.5%;
+
 }
 
 body{
     color: $dark-grey;
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
+    height: 100vh;
     //line-height: 1.6;
 }
 
@@ -19,4 +21,7 @@ button{
 
 button:disabled{
     cursor: default;
+}
+#root{
+	height: 100vh;
 }

@@ -11,6 +11,10 @@
 @import "./components/_backdrop.scss";
 @import "./components/_location.scss";
 @import "./components/_currentConditions.scss";
+@import "./components/_dayList.scss";
+@import "./components/_backdrop.scss";
+@import "./components/_sideDrawer.scss";
+@import "./components/_sideMenuItem.scss";
 
 //Main sections styles
 
@@ -19,4 +23,7 @@
 }
 .Footer{
 	background-color: $dark-blue
+}
+body{
+	background-color: $off-white;
 }

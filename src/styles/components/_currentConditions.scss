@@ -1,5 +1,16 @@
 .currentCon{
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: $m-size;
-	text-align: center;
+	margin-top: $l-size;
+	justify-content: center;
+	align-items: center;
 	font-weight: bold;
+	.currentCon_context{
+		width: 100%;
+		text-align: center;
+	}
+	.currentCon_temp{
+		font-size: $font-size-large;
+	}
 }

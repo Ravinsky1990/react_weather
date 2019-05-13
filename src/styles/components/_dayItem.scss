@@ -1,9 +1,41 @@
 .dayItem{
 	display: flex;
-	flex-wrap: wrap;
-	.currentCon{
+	margin-bottom: $xl-size;
+	justify-content: space-between;
+	padding: $m-size 0px;
+	border-radius:3px;
+	.dayItem__infoItemWrap{
+		width: 100%
+	}
+	.dayDescr{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+			@media (max-width: 800px) {
+	        width: 100%;
+	        margin-bottom: $m-size;
+	    }
+	}
+	.dayDescr_cur{
+		font-size: $font-size-large;
+		font-weight: bold;
+		color: #ff4d4d;
 		width: 100%;
-		margin-bottom: $s-size;
 		text-align: center;
 	}
+	.dayItem__infoItemWrap{
+		display: flex;
+		flex-wrap: wrap;
+			@media (max-width: 800px) {
+	        justify-content: space-around;
+	    }
+	}
+
+		@media (max-width: 800px) {
+	        flex-wrap: wrap;
+	    }
+}
+.dayItem:nth-of-type(odd){
+	background-color: #e6f0ff;
 }

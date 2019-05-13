@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Header from "./components/header/headerHOC"
-import Main from "./components/main/mainHOC"
-import Footer from "./components/footer/footer"
-import Location from "./components/location/location"
+import Header from "./components/header/headerHOC";
+import Main from "./components/main/mainHOC";
+import Footer from "./components/footer/footer";
+import Location from "./components/location/location";
+import SideDrawer from "./components/sideMenu/sideDrawer"
 import { connect } from 'react-redux';
 //import axios from "axios"
 //Actions
@@ -16,7 +17,8 @@ class App extends Component {
 
   render() {
     return(
-    	<React.Fragment>
+      <React.Fragment>
+        <SideDrawer/>
     		<header className="Header">
     			<Header/>
     		</header>

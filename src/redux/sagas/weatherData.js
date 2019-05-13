@@ -1,7 +1,8 @@
 import {put} from "redux-saga/effects";
 //actions
 import {setWeatherData} from "../actions/actions";
-import {setDefaultParams} from "../actions/actions"
+import {setDefaultParams} from "../actions/actions";
+import {setIconData} from "../actions/actions";
 
 import axios from "axios";
 import {apiKeys} from "../../Apies"
@@ -9,20 +10,26 @@ import {apiKeys} from "../../Apies"
 export function* setWeatherData_Saga(action){
 	
 	//yield put()//onSpinner
-	let response = yield axios.get(`http://api.apixu.com/v1/forecast.json?key=${apiKeys.Apixu}&q=${action.location}&days=7`)
-	//off spinner
-	let dataTooStore = response.data
-	console.log(dataTooStore);
+	let responseIcons = yield axios.get("http://www.apixu.com/doc/conditions.json");
 
-	//set Data
-	yield put(setWeatherData(dataTooStore));
-	
+	try{
+		let response = yield axios.get(`http://api.apixu.com/v1/forecast.json?key=${apiKeys.Apixu}&q=${action.location}&days=7`);
+		//off spinner
+		let dataTooStore = response.data
 
-	//set defaultParam
-	let defaultData = {
-		cityName: response.data.location.name
+		//set Data
+		yield put(setWeatherData(dataTooStore));
+		yield put(setIconData(responseIcons.data))
+
+		//set defaultParam
+		let defaultData = {
+			cityName: response.data.location.name
+		}
+		yield put(setDefaultParams(defaultData))
+	}catch(e){
+		console.log(e);
+		
 	}
-	yield put(setDefaultParams(defaultData))
 };
 
 
