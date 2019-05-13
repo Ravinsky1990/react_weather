@@ -10,10 +10,10 @@ import {apiKeys} from "../../Apies"
 export function* setWeatherData_Saga(action){
 	
 	//yield put()//onSpinner
-	let responseIcons = yield axios.get("http://www.apixu.com/doc/conditions.json");
+	let responseIcons = yield axios.get("https://www.apixu.com/doc/conditions.json");
 
 	try{
-		let response = yield axios.get(`http://api.apixu.com/v1/forecast.json?key=${apiKeys.Apixu}&q=${action.location}&days=7`);
+		let response = yield axios.get(`https://api.apixu.com/v1/forecast.json?key=${apiKeys.Apixu}&q=${action.location}&days=7`);
 		//off spinner
 		let dataTooStore = response.data
 
