@@ -6,6 +6,9 @@
 	align-items: center;
 	flex-basis: 200px;
 	margin-bottom: $xl-size;
+	@media (max-width: 430px) {
+	        flex-basis: 150px
+	    }
 	.infoItem_name{
 		width: 100%;
 		text-align: center;

@@ -4,14 +4,25 @@
 	align-items: center;
 	margin-bottom: $s-size;
 	margin-top: $s-size;
+		@media (max-width: 430px) {
+		    justify-content: flex-start;
+		}
 	.location__label{
 		margin-right: $s-size;
+		font-weight: bold;
+		@media (max-width: 430px) {
+	        width: 100%;
+	        display: block;
+	   }
 	}
 	.location__input{
 		border: 2px solid $grey;
 		border-radius: 4px;
 		padding: 6px 6px;
 		font-size: $font-size-small;
+			@media (max-width: 430px) {
+		    width: 200px;
+		}
 	}
 	.location__btn{
 		border: none;
